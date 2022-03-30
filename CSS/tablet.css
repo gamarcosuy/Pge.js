@@ -1,0 +1,36 @@
+.Slider__button--buy{
+    bottom: 40rem; 
+} 
+
+.Slider__img--Stain img {
+    width: 50rem;
+    bottom: 7rem;
+ }
+.Slider__img--Price img {
+    width: 13rem;
+    top: -35rem;
+    left: calc(50% + 12rem); 
+} 
+.Article--container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ } 
+ .Form-Container{
+    padding: 1.5rem 40rem;
+    padding: 1.5rem calc(50% - 44rem  );
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+ .Form__checkbox-input {
+    margin-left: 2rem;
+ }
+ 
+.Form-Container__input--checkbox{
+    justify-content: center;
+ }
+ .Form-Container__input--conditions{
+    width: 80%;
+ }
+

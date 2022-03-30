@@ -1,0 +1,268 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family:'DM Sans', sans-serif;
+}
+body {
+  width: 100%;
+  min-width: 320px;
+ }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden; 
+}
+.Header{
+      display: flex;
+      min-width: 320px;
+      width: 100%;
+      height: 5rem;
+      background-color: black;
+      place-items: center;
+}
+.Header__link{
+      text-decoration: none;
+      margin-right: 2rem;
+}
+.Header__title{
+      display: inline-block;
+      width: 15rem;
+      color: white;
+      font-weight: 500;
+      font-size:  1.4rem; 
+      margin-left: 2rem;
+      margin-right: auto;
+}
+.Header__link-text{
+      display: none;
+      position: relative;
+      font-size: 1.2rem;
+      bottom: 1.1rem;
+      right: 1rem;
+      color: #4c4c4c;
+ }
+.Header__link-icon{
+      display: inline-block;
+      position: relative;
+      width: 3.6rem;
+      height: 3.6rem;
+      background-image: url('../Assets/facebook_icon.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+}
+.Product-slider {
+      width: 100%;
+      height: 33rem;
+      background-color: #d2d2d2; 
+    }
+.Product-slider__element {
+      width: 100%;
+      height: 33rem;
+     }
+.Product-slider__arrow-button {
+      display: none;
+     }
+.Slider__product--layout{
+      width: 100%;
+      height: 33rem; 
+    }
+.Slider__button--buy {
+      padding: 10px 25px;
+      font-family: 'Roboto';
+      font-weight: 500;
+      font-size: 1.4rem;
+      letter-spacing: .4rem;
+      color: #ffffff;
+      border: none;
+      border: 1px rgba(0, 0, 0, 0.075) solid;
+      border-radius: .5rem;
+      background-color: #4ea6e5;
+      -webkit-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+      position: relative;
+      bottom: 20rem;
+      right: -2rem;
+      z-index: 1;
+     }  
+.Slider__button--buy:hover {
+      color: #4c4c4c;
+      box-shadow: 0 0.1rem 0.6rem 0 #b2b2b2;
+      border-color: #dfe1e500; 
+    }
+.Slider__button--buy:active {
+      color:white;
+      box-shadow: none;
+      border-color: none;
+      -webkit-transition-duration: 0.0s;
+      transition-duration: 0.0s; 
+}
+.Slider__image--product img {
+      height: 7rem;
+      position: relative;
+      top: 3rem;
+      left: 2rem;
+ }     
+.Slider__img--Stain img {
+      width: 30rem;
+      position: relative;
+      left: calc(50% - 1.6rem);
+      bottom: 2rem; 
+      margin-left: -2rem;
+}
+.Slider__img--Price img {
+      width: 13rem;
+      position: relative;
+      bottom: 20rem;
+      z-index: 1;
+      left: calc(50% + 3rem);      
+}
+.Article{
+      width: 100%; 
+      padding: 1.5rem;
+}     
+.Article--title{
+      margin-top: 2rem;
+      margin-bottom: .5rem;
+      font-size: 3rem;
+      font-weight: 300;
+  }   
+.Article--container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;              
+    }       
+.Article {
+      width: 100%; 
+      padding: 1.5rem;
+}
+.Article--title{
+      margin-top: 2rem;
+      margin-bottom: .5rem;
+      font-size: 3rem;
+      font-weight: 300; 
+}
+.article {
+      width: 29rem;
+      height: 50rem;
+      display: grid;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      border: 1px #a79d9d solid;
+      box-shadow: 0 4px 4px 1px gray;
+      border-radius: 1rem;
+      gap: 15px;
+}
+.article__picture{
+          width: 100%;
+          height: 22rem;
+          background-color: gray;
+          border-radius: 10px 10px 0px 0px;
+      }  
+.article__title {
+          font-size: 2.2rem;
+          font-weight: 500;
+          padding: 1.5rem;
+          margin-top: 1rem;
+}  
+.article__content{
+          font-size: 1.6rem;
+          font-weight: 300;
+          padding: 1.5rem; 
+          margin-bottom: 1rem;
+}
+.Form-Section__title{
+        font-size: 4rem;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 2rem;
+    }
+.Form-Container{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-top: 1px #ababab solid;
+    gap: 1.5rem;
+    }
+.Form-Container__input {
+        height: 6rem;
+        border: none;
+        border: 1px #ababab solid;
+        border-radius: 5px;
+        outline: none;
+        align-items: center;
+        font-size: 2.2rem;
+        font-weight: 300;
+        padding-left: 1.5rem;
+        color: gray;
+        font-weight: 300;
+    }
+.Form-Container__input:focus:invalid{
+        border: 1.5px rgba(230, 16, 16, 0.966) solid;
+    }
+    .Form-Container__input--checkbox{
+        display: flex;
+        margin-bottom: 40px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .Form-Container__label{
+        margin: 0px auto;
+        justify-content: center;
+    }
+    .Form__checkbox-input{
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;    
+    }
+    .Form__label-input--text {
+        font-size: 2.2rem;
+        font-weight: 300;
+        color: #4c4c4c;
+    }
+.Form__submit {
+    padding: 10px 25px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: 4px;
+    color: #ffffff;
+    border: none;
+    border: 1px rgba(0, 0, 0, 0.075) solid;
+    border-radius: 5px;
+    background-color: #4ea6e5;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    width: 210px;
+    height: 60px;
+    margin: 0px auto;
+    font-size: 2.4rem;
+    width: 210px;
+    height: 60px;
+    margin: 0px auto;
+    font-size: 2.4rem;
+ }
+.Form__submit:hover{
+    color: #4c4c4c;
+    box-shadow: 0 0.1rem 0.6rem 0 #b2b2b2;
+    border-color: #dfe1e500; 
+    }
+.Form__submit:active {
+    color:white;
+    box-shadow: none;
+    border-color: none;
+    -webkit-transition-duration: 0.0s;
+    transition-duration: 0.0s; 
+    }
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+.Form-Container__input--conditions{
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: #4c4c4c; 
+}

@@ -1,0 +1,13 @@
+.Article--container{
+    padding: 0px calc(50% - 125rem / 2 ); 
+}
+.Form-Container__input{
+    width: 40rem;
+}
+#email {
+
+    width: calc(1280px - 44rem);
+}
+.Form-Container__input--conditions{
+    margin-right: 10rem;
+}

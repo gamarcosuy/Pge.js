@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./CSS/Slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/Slick/slick-theme.css">
+    <link rel="stylesheet" href="./CSS/style.css" >
+    <link rel="stylesheet" href="./CSS/mobile-L.css" media="(min-width: 425px)">
+    <link rel="stylesheet" href="./CSS/tablet.css" media="(min-width: 720px)">
+    <link rel="stylesheet" href="./CSS/desktop.css" media="(min-width: 1280px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <title>Página js</title>
+</head>
+<body>
+<header class="Header">
+        <h2 class="Header__title">Landing Page</h2>
+        <a href="https://www.facebook.com/" class="Header__link">   
+            <span class="Header__link-text">SEGU&Iacute; CONECTADO</span>
+            <span class="Header__link-icon"></span>
+        </a>
+</header>
+
+<main>
+    <section class="Product-slider">
+        <div class="Product-slider__element">
+            <div class="Slider__product--layout">
+                <picture class="Slider__image--product">
+                    <img src="./Assets/one.svg" alt="Product one">
+                </picture>
+                <picture class="Slider__img--Stain">
+                    <img src="./Assets/first.png" alt="Stain">
+                </picture>
+                <picture class="Slider__img--Price">
+                    <img src="./Assets/value29.svg" alt="Price product">
+                </picture> 
+                <button class="Slider__button--buy">COMPRAR</button>
+            </div>
+        </div>
+        <div class="Product-slider__element">
+           <div class="Slider__product--layout">
+                <picture class="Slider__image--product">
+                    <img src="./Assets/two.svg" alt="Product two">
+                </picture>
+               <picture class="Slider__img--Stain">
+                    <img src="./Assets/second.png" alt="Stain">
+                </picture>
+               <picture class="Slider__img--Price">
+                    <img src="./Assets/value49.svg" alt="Price product">
+                </picture>
+               <button class="Slider__button--buy">COMPRAR</button>
+            </div>
+        </div>
+        <div class="Product-slider__element">
+            <div class="Slider__product--layout">
+                <picture class="Slider__image--product">
+                    <img src="./Assets/three.svg" alt="Product three">
+                </picture>
+               <picture class="Slider__img--Stain">
+                    <img src="./Assets/third.png" alt="Stain">
+                </picture>
+                <picture class="Slider__img--Price">
+                    <img src="./Assets/value49.svg" alt="Price product">
+                </picture>
+                <button class="Slider__button--buy">COMPRAR</button>
+            </div>
+        </div>
+    </section>
+    <section class="Article">
+        <h1 class="Article--title">&Uacute;ltimos Art&iacute;culos</h1>
+        <div class="Article--container"></div>
+    </section>
+    <section class="Form-Section">
+        <h2 class="Form-Section__title">Formulario</h2>
+        <form action="" class="Form-Container" id="form">
+            <label for="nombre" class="Form-Container__label">
+                <input 
+                    class="Form-Container__input"
+                    id="nombre"
+                    type="text"
+                    name="nombre"
+                    placeholder="Nombre"
+                    autocomplete="given-name"
+                    minlength="2"
+                    required
+                    oninvalid="this.setCustomValidity('El nombre debe poseer mínimo dos caracteres')" 
+                    oninput="this.setCustomValidity('')" 
+                >
+            </label>
+            
+            <label for="apellido" class="Form-Container__label">
+                <input
+                    class="Form-Container__input"
+                    id="apellido"
+                    type="text"
+                    name="apellido"
+                    placeholder="Apellido"
+                    autocomplete="family-name"
+                    minlength="2"
+                    required
+                    oninvalid="this.setCustomValidity('El apellido debe poseer mínimo dos caracteres')" 
+                    oninput="this.setCustomValidity('')" 
+                >
+            </label>
+            <label for="email" class="Form-Container__label">
+                <input 
+                    class="Form-Container__input"
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholder="e-Mail"
+                    autocomplete="email"
+                    required
+                    oninvalid="this.setCustomValidity('El email debe ser como el del ejemplo: (emaildeejemplo@gmail.com)')" 
+                    oninput="this.setCustomValidity('')" 
+                >
+            </label>
+            <label for="State" class="Form-Container__label">
+                <input
+                    class="Form-Container__input"
+                    id="inputState"
+                    list="State"
+                    placeholder="Departamentos"
+                    onchange="onChange()"
+                    required
+                    oninvalid="this.setCustomValidity(' ')" 
+                    oninput="this.setCustomValidity('')" 
+                >
+                <datalist id="State"></datalist>
+            </label>
+            <label for="Location" class="Form-Container__label">
+                <input 
+                    class="Form-Container__input"
+                    list="Location"
+                    placeholder="Localidad"
+                    required
+                    oninvalid="this.setCustomValidity(' ')" 
+                    oninput="this.setCustomValidity('')" 
+                >
+                <datalist id="Location"></datalist>
+            </label>
+            <label for="Identification" class="Form-Container__label">
+                <input
+                    class="Form-Container__input"
+                    id="Identification"
+                    type="number"
+                    name="Identification"
+                    placeholder="C.I"
+                    required
+                    oninvalid="this.setCustomValidity('La C.I no es correcta')" 
+                    oninput="this.setCustomValidity('')" 
+                >
+            </label>
+            <label for="checkbox" class="Form-Container__input--checkbox">
+                <input 
+                    class="Form__checkbox-input"
+                    type="checkbox" id="checkbox"
+                    required
+                    oninvalid="this.setCustomValidity('Debes aceptar las bases y condiciones')" 
+                    oninput="this.setCustomValidity('')" 
+                >
+                <span class="Form-Container__input--conditions">Acepto las bases y condiciones</span>
+            </label>
+            </div>
+            
+            <input class="Form__submit" type="submit" value="ENVIAR" >
+        </form>
+    </section>
+</main>
+    
+    
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="./CSS/slick/slick.min.js"></script>	
+<script>
+    $('.Product-slider').slick({
+    });
+</script>
+<script src="./JS/article.js" type="module"></script> 
+<script src="./JS/main.js" type="module"></script> 
+</body>
+</html>
+
+
